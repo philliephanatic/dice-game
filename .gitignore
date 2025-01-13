@@ -1,4 +1,4 @@
-# Git ignore file (e.g., node_modules/)
-# git config --global core.excludesfile ~/.gitignore_global
-# .DS_Store
-# node_modules/
+Git ignore file (e.g., node_modules/)
+git config --global core.excludesfile ~/.gitignore_global
+.DS_Store
+node_modules/
