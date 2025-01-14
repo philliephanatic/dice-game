@@ -30,7 +30,7 @@ h1 {
   color: #5cb6f9;
 }
 
-.btn {
+.btn-container {
   grid-row: 2;
   grid-column: span 2;
 
@@ -53,6 +53,7 @@ button {
 button:hover {
   background-color: #5FE4E8;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media (min-width: 769px) {

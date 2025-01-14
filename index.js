@@ -13,4 +13,5 @@ function diceRoll () {
             document.querySelector("h1").innerHTML = "Draw!";
 }
 
-diceRoll()
+document.querySelector("button").addEventListener("click",
+        diceRoll);
