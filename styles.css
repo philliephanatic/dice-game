@@ -6,7 +6,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 0.25fr);
+  grid-template-rows: repeat(4, 0.25fr);
   
   width: 100%;
   text-align: center;
@@ -17,7 +17,7 @@ body {
   
   text-align: center;
   display: inline-block;
-  margin: 0rem;
+  margin: 0;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
   grid-row: 2;
   grid-column: span 2;
 
-  margin: 3rem;
+  margin: 0;
   display: flex;
   justify-content: center;
 
@@ -71,6 +71,9 @@ p {
   text-shadow: 3px 0 #232931;
   color: #5cb6f9;
   font-family: 'Indie Flower', cursive;
+}
+
+.player1, .player2 {
   margin-bottom: -2rem;
 }
 
@@ -79,10 +82,34 @@ img {
   height: auto;
 }
 
+.score-header {
+  grid-column: span 2;
+  grid-row: 4;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #5cb6f9;
+  margin: 0;
+}
+
+.score-counter-1, .score-counter-2 {
+  margin: 0;
+  font-size: 8rem;
+}
+
+.score-counter-container-1, .score-counter-container-2 {
+  border: black;
+  border-style: solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
 }
