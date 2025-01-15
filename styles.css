@@ -42,12 +42,13 @@ h1 {
 
 button {
   font-size: 3rem;
+  color: black;
   border-radius: 50%;
   background-color: #E8745F;
   border: black;
   border-style: solid;
   padding: 2rem;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   /* font-family:  */
 }
 
@@ -57,11 +58,9 @@ button:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
-/* @media (min-width: 769px) {
-  button:hover {
-    transform: translateY(-2px);
-  }
-} */
+button:active {
+  transform: scale(0.95); /* Shrinks slightly when clicked */
+}
 
 p {
   font-size: 4rem;
