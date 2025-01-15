@@ -42,28 +42,35 @@ h1 {
 
 button {
   font-size: 3rem;
+  /* font-family:  */
   color: black;
   border-radius: 50%;
-  background-color: #E8745F;
+  background-color: #5FE4E8;
   border: black;
   border-style: solid;
   padding: 2rem;
-  transition: 0.1s ease-in-out;
-  box-shadow: 0 0 10px rgba(98, 0, 234, 0.5);
-  /* font-family:  */
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 0 20px rgba(98, 0, 234, 1), 0 0 30px rgba(98, 0, 234, 0.8);
+  
 }
 
 button:hover {
   background-color: #5FE4E8;
   cursor: pointer;
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 0 20px rgba(98, 0, 234, 1), 0 0 30px rgba(98, 0, 234, 0.8);
+  box-shadow: 0 0 20px rgba(98, 0, 234, 1), 0 0 40px rgba(98, 0, 234, 0.8);
 
 }
 
 button:active {
-  transform: scale(0.95); /* Shrinks slightly when clicked */
-  box-shadow: 0 0 5px rgba(98, 0, 234, 0.7); /* Dim glow when clicked */
+  transform: scale(1.2); /* Shrinks slightly when clicked */
+  box-shadow: none; /* Dim glow when clicked */
+}
+
+@media (hover: none) { /* Targets devices that don’t support hover (touchscreens). */
+  button:hover {
+    transform: none;
+  }
 }
 
 p {
