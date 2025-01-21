@@ -17,7 +17,7 @@ body {
   grid-row: 3;
   
   text-align: center;
-  display: inline-block;
+  display: inline-block; /* Look into making FLEX */
   margin: 0;
 }
 
@@ -32,13 +32,13 @@ h1 {
 }
 
 .btn-container {
+  display: flex;
+  justify-content: center;
+  
   grid-row: 2;
   grid-column: span 2;
 
   margin: 0;
-  display: flex;
-  justify-content: center;
-
 }
 
 button {
@@ -52,7 +52,6 @@ button {
   padding: 2rem;
   transition: 0.1s ease-in-out;
   box-shadow: 0 0 20px rgba(98, 0, 234, 1), 0 0 30px rgba(98, 0, 234, 0.8);
-  
 }
 
 button:hover {
